@@ -10,7 +10,7 @@ class ProductProvider extends Component {
         detailProduct: detailProduct,
         cart: [],
         modalOpen : false,
-        modalProduct: detailProduct,
+        modalProduct: [],
         cartSubTotal: 0,
         cartTax: 0,
         cartTotal: 0 ,
@@ -88,7 +88,7 @@ class ProductProvider extends Component {
         const selectedProduct = tempCart.find((item) => item.id === id)
         selectedProduct.count -=1 
         
-        if(selectedProduct.count  == 0){
+        if(selectedProduct.count  === 0){
             this.removeItem(id)
         }
         else{

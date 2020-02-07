@@ -28,7 +28,6 @@ export default class MyApp extends React.Component {
         let env = 'sandbox'; // you can set here to 'production' for production
         let currency = 'USD'; // or you can set this value from your props or state
         // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
-        console.log(process.env)
         const client = {
             sandbox: process.env.REACT_APP_APP_ID 
             
