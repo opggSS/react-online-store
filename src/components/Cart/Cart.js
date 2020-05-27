@@ -7,10 +7,12 @@ import CartList from './CartList'
 import CartTotals from './CartTotals'
 export default class Cart extends Component {
     render() {
+        console.log(ProductConsumer)
         return (
             <section>
                 <ProductConsumer>
                     {(value) => {
+                        console.log()
                         const {cart} = value
                         if(cart.length >  0){
                             return (
